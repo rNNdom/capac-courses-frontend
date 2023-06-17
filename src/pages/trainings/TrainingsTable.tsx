@@ -42,6 +42,7 @@ const TrainingsTable = () => {
           </tr>
         ))}
       </Table>
+      <p className="flex justify-center p-2 text-sm italic">Para ingresar al detalle de la capacitación, haga click sobre la fila que corresponda en la tabla de arriba.</p>
     </div>
   );
 };
