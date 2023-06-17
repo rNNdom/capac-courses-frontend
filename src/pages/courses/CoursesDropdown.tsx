@@ -7,7 +7,7 @@ function CoursesDropdown({ onSelectCourse }: { onSelectCourse: (courseId: string
   const [courses, setCourses] = useState<CursosEntry[]>([]);
   const [selectedCourse, setSelectedCourse] = useState<string>("");
 
-  const URL_BACKEND = "http://localhost:3000";
+  const URL_BACKEND = "200.13.4.231:3000";
 
   useEffect(() => {
     const fetchCursos = async () => {

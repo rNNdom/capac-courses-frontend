@@ -9,7 +9,7 @@ export default function CourseDetail({ id }: { id: number }) {
   const [loading, setLoading] = useState(true);
   const [isEditable, setIsEditable] = useState(false);
 
-  const URL_BACKEND = "http://localhost:3000";
+  const URL_BACKEND = "200.13.4.231:3000";
   useEffect(() => {
     const fetchCourse = async () => {
       try {
