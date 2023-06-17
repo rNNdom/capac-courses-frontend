@@ -1,10 +1,11 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { CursosEntry, buttonStyle } from "../../../../types";
+import { buttonStyle } from "../../../../types";
 import { useRouter } from "next/router";
 
 export default function CourseDetail({ id }: { id: number }) {
-  const [course, setCourse] = useState<CursosEntry>();
+  const [course, setCourse] = useState<any>();
   const [loading, setLoading] = useState(true);
   const [isEditable, setIsEditable] = useState(false);
 

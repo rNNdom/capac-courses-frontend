@@ -1,11 +1,12 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { CapacitacionesEntry, CursosEntry, buttonStyle } from "../../../../types";
+import { CursosEntry, buttonStyle } from "../../../../types";
 import { useRouter } from "next/router";
 import { optionSelect } from "../../../../utils/utils";
 
 export default function TrainingDetail({ id }: { id: number }) {
-  const [capacitacion, setCapacitacion] = useState<CapacitacionesEntry>();
+  const [capacitacion, setCapacitacion] = useState<any>();
   const [loading, setLoading] = useState(true);
   const [courses, setCourses] = useState<CursosEntry[]>([]);
   const [selectedCourse, setSelectedCourse] = useState<string>("");
@@ -125,7 +126,7 @@ export default function TrainingDetail({ id }: { id: number }) {
         <label className="flex-row flex gap-4">
           <h3 className="flex items-center">Cursos:</h3>
           {capacitacion?.cursos.length ? (
-            capacitacion.cursos.map((cursos, index: number) => (
+            capacitacion.cursos.map((cursos: any, index: number) => (
               <ul key={index} className="bg-slate-200 p-2 w-full rounded-md flex-row flex gap-4">
                 <li>Nombre: {cursos.name}</li>
                 <li>Contenidos: {cursos.contents}</li>
