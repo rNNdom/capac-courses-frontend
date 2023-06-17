@@ -6,7 +6,7 @@ import { useRouter } from "next/router";
 
 const TrainingsTable = () => {
   const [capacitacion, setCapacitacion] = useState<CapacitacionesEntry[]>();
-  const URL_BACKEND = "200.13.4.231:3000";
+  const URL_BACKEND = "http://200.13.4.231:3000";
 
   useEffect(() => {
     const fetchCapacitacion = async () => {

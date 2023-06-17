@@ -10,7 +10,7 @@ function NewTrainingForm() {
     formState: { errors },
     reset,
   } = useForm<CapacitacionesEntry>();
-  const URL_BACKEND = "200.13.4.231:3000";
+  const URL_BACKEND = "http://200.13.4.231:3000";
   const router = useRouter();
   const onSubmit = async (data: CapacitacionesEntry) => {
     try {

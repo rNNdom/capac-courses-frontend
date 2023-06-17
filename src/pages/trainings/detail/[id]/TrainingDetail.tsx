@@ -13,7 +13,7 @@ export default function TrainingDetail({ id }: { id: number }) {
   const [isEditable, setIsEditable] = useState(false);
 
   const router = useRouter();
-  const URL_BACKEND = "200.13.4.231:3000";
+  const URL_BACKEND = "http://200.13.4.231:3000";
   useEffect(() => {
     const fetchCapacitacion = async () => {
       try {
